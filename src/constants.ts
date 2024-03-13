@@ -77,7 +77,7 @@ export const contact = [
 export const fr = [
   {
     label: "Little Lemon",
-    img: "/littlelemon.jpeg",
+    img: "/little-lemon.svg",
   },
   {
     label: "Lexaz",
