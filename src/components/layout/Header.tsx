@@ -14,7 +14,7 @@ export default function Header() {
             <figure>
               <Link href={"/"}>
                 <Image
-                  src={"/nex-l.svg"}
+                  src={"/nex.svg"}
                   alt="Nex-Logo"
                   width={50}
                   height={50}
