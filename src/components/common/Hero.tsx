@@ -33,27 +33,24 @@ export default function Hero({
             : "flex-col-reverse sm:flex-row sm:gap-0"
         }`}
       >
-        <div
-          className={
-            id === "home"
-              ? "flex items-center justify-center flex-col gap-3"
-              : undefined
-          }
+        <H1
+          id={id}
+          className={`flex items-center justify-center gap-3 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 ${
+            id === "work" ? "pb-5" : ""
+          } ${
+            id === "home" || id === "work" ? "text-4xl md:text-5xl" : "text-5xl"
+          }`}
         >
-          <H1
-            id={id}
-            className={`flex items-center justify-center gap-3 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 ${
-              id === "work" ? "pb-5" : ""
-            } ${
-              id === "home" || id === "work"
-                ? "text-4xl md:text-5xl"
-                : "text-5xl"
-            }`}
-          >
-            {textOne} <span className="w-1 rounded-full h-10 bg-gray-50" />
-            {textTwo}
-          </H1>
-          {id === "home" && (
+          {textOne} <span className="w-1 rounded-full h-10 bg-gray-50" />
+          {textTwo}
+        </H1>
+        {(id === "home" || id === "work") && (
+          <SplineCubes
+            scene={id === "home" ? "/scene1.splinecode" : "/scene2.splinecode"}
+          />
+        )}
+        {id === "contact" && (
+          <ContactForm>
             <ContactSocialLinks className="flex items-center justify-center gap-5">
               {contact.map((item) => (
                 <li
@@ -70,14 +67,8 @@ export default function Hero({
                 </li>
               ))}
             </ContactSocialLinks>
-          )}
-        </div>
-        {(id === "home" || id === "work") && (
-          <SplineCubes
-            scene={id === "home" ? "/scene1.splinecode" : "/scene2.splinecode"}
-          />
+          </ContactForm>
         )}
-        {id === "contact" && <ContactForm />}
         {id === "about" && <p>About</p>}
       </div>
     </Section>

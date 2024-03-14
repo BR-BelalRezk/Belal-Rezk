@@ -2,9 +2,14 @@
 import { FaTelegramPlane } from "react-icons/fa";
 import Label_Input from "./Label_Input";
 
-export default function ContactForm() {
+export default function ContactForm({
+  children,
+}: {
+  children: Readonly<React.ReactNode>;
+}) {
   return (
     <form className="flex flex-col items-center justify-center gap-3 sm:gap-5">
+      {children}
       <div className="flex items-center justify-center gap-3 sm:gap-10">
         <Label_Input name="name" />
         <Label_Input name="email" />
