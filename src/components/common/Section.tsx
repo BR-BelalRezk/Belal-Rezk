@@ -6,7 +6,6 @@ export default function Section({
   id:
     | "home"
     | "about"
-    | "me"
     | "skills"
     | "certificates"
     | "work"

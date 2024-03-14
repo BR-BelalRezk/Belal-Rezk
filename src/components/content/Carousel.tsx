@@ -2,14 +2,15 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import StaggerText from "../Animations/StaggerText";
-import { FaCode } from "react-icons/fa";
-import { TbAugmentedReality } from "react-icons/tb";
+
 export default function Carousel({
   children,
   id,
+  icon,
 }: {
   children: Readonly<React.ReactNode>;
-  id: "fr" | "ar";
+  id: "Front-End" | "AR" | "Skills" | "Certificates";
+  icon: JSX.Element;
 }) {
   const [width, setWidth] = useState<number>(0);
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -20,24 +21,20 @@ export default function Carousel({
   }, []);
   return (
     <div
-      className=" overflow-hidden flex items-center justify-center flex-col gap-10"
+      className="overflow-hidden flex items-center justify-center flex-col gap-10"
       role="carousel"
       ref={carouselRef}
-      id="projects"
     >
-      <StaggerText
-        text={id === "fr" ? "Front-End" : "AR"}
-        icon={id === "fr" ? <FaCode /> : <TbAugmentedReality />}
-      />
-      <motion.div
-        className="flex items-center justify-center gap-10 cursor-grab"
+      <StaggerText text={id} icon={icon} />
+      <motion.ul
+        className="cursor-grab flex items-center justify-center gap-10"
         role="inner-carousel"
         drag={"x"}
         dragConstraints={{ right: width, left: -width }}
         whileTap={{ cursor: "grabbing" }}
       >
         {children}
-      </motion.div>
+      </motion.ul>
     </div>
   );
 }
