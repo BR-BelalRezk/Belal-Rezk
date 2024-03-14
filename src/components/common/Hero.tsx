@@ -53,8 +53,8 @@ export default function Hero({
                   key={item.label}
                   className={`hover:scale-125 duration-500 ${
                     item.label === "github"
-                      ? "text-2xl"
-                      : "text-sm p-1.5 bg-gray-50 text-black rounded-full"
+                      ? "text-4xl"
+                      : "text-2xl p-1.5 bg-gray-50 text-black rounded-full"
                   }`}
                 >
                   <Link target="_blank" href={item.url}>
