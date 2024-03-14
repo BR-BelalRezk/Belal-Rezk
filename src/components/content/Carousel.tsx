@@ -20,7 +20,7 @@ export default function Carousel({
   }, []);
   return (
     <div
-      className=" overflow-hidden cursor-grab flex items-center justify-center flex-col gap-10"
+      className=" overflow-hidden flex items-center justify-center flex-col gap-10"
       role="carousel"
       ref={carouselRef}
       id="projects"

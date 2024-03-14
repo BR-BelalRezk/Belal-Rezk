@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import Aside from "./Aside";
 
 const Navbar = dynamic(() => import("./Navbar"), { ssr: false });
-const Aside = dynamic(() => import("./Aside"), { ssr: false });
 
 export default function Header() {
   return (

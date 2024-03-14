@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { aside } from "@/constants";
 import {
@@ -9,10 +8,8 @@ import {
   MenuAnimationToggleButton,
 } from "../Animations/MenuAnimation";
 import Circle from "./Circle";
-import { usePathname } from "next/navigation";
 
 export default function Aside() {
-  const pathname = usePathname();
   return (
     <MenuAnimation id="aside">
       <MenuAnimationParent className="relative">
@@ -27,13 +24,11 @@ export default function Aside() {
           {aside.map((item) => (
             <MenuAnimationListItem
               key={item.label}
-              className={`w-full ${
-                item.path === pathname ? "text-gray-50" : "text-gray-400"
-              }`}
+              className="w-full text-gray-400"
             >
               <Link
                 href={`${item.path}${item.hash}`}
-                className="flex items-center justify-between"
+                className="flex items-center justify-between hover:scale-105 duration-500 hover:text-gray-50"
               >
                 <span className="uppercase font-semibold text-sm">
                   {item.label}

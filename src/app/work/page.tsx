@@ -5,7 +5,6 @@ export default function WorkPage() {
     <>
       <Hero id="work" textOne="Work" textTwo="Projects" />
       <Projects id="fr" />
-      <Projects id="ar" />
     </>
   );
 }

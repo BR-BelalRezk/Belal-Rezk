@@ -10,7 +10,7 @@ export default function Projects({ id }: { id: "fr" | "ar" }) {
     <Section id={id}>
       <Carousel id={id}>
         {projects.map((project) => (
-          <ProjectCard key={project.img} project={project} />
+          <ProjectCard key={project.label} project={project} />
         ))}
       </Carousel>
     </Section>

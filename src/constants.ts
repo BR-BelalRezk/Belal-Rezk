@@ -77,45 +77,41 @@ export const contact = [
 export const fr = [
   {
     label: "Little Lemon",
-    img: "/little-lemon.svg",
+    desc: "A mediterranean restaurant, focused on traditional recipes served with a modern twist.",
+    github: "https://github.com/BR-BelalRezk/Little-Lemon",
+    demo: "https://meta-littlelemon.vercel.app",
   },
   {
     label: "Lexaz",
-    img: "/lexaz.jpeg",
+    desc: "Internal hotel management web app for desktop, a small boutique hotel with 8 cabins.",
+    github: "https://github.com/BR-BelalRezk/Lexaz",
+    demo: "https://lexaz.vercel.app",
   },
   {
     label: "Zexai",
-    img: "/zexai.jpeg",
+    desc: "An AI SaaS app, specializing in advanced image generation and enhancement technologies.",
+    github: "https://github.com/BR-BelalRezk/Zexai",
+    demo: "https://zexai.vercel.app",
   },
   {
     label: "Canvex",
-    img: "/canvex.jpeg",
+    desc: "A dynamic real-time collaboration platform as Figma, facilitating teamwork and creativity.",
+    github: "https://github.com/BR-BelalRezk/Canvex",
+    demo: "https://canvex-figma.vercel.app",
   },
   {
     label: "Nexa",
-    img: "",
+    desc: "A social media platform fostering connections and interactions among users.",
+    github: "https://github.com/BR-BelalRezk/Nexa",
+    demo: "",
   },
-];
+] as const;
 
 export const ar = [
   {
-    label: "Little Lemon",
-    img: "/littlelemon.jpeg",
+    label: "",
+    desc: "",
+    github: "",
+    demo: "",
   },
-  {
-    label: "Lexaz",
-    img: "/lexaz.jpeg",
-  },
-  {
-    label: "Zexai",
-    img: "/zexai.jpeg",
-  },
-  {
-    label: "Canvex",
-    img: "/canvex.jpeg",
-  },
-  {
-    label: "Nexa",
-    img: "",
-  },
-];
+] as const;
