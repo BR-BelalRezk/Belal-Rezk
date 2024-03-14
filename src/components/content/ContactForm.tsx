@@ -8,7 +8,7 @@ export default function ContactForm({
   children: Readonly<React.ReactNode>;
 }) {
   return (
-    <form className="flex flex-col items-center justify-center gap-3 sm:gap-5">
+    <form className="flex flex-col items-center justify-center gap-3 sm:gap-5 lg:mt-12">
       <div className="flex items-center justify-center gap-3 sm:gap-10">
         <Label_Input name="name" />
         <Label_Input name="email" />
