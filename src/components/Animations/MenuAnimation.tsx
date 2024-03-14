@@ -139,6 +139,7 @@ const MenuAnimationToggleButton = ({
     <button
       className={className}
       onClick={() => setToggle((prevState) => !prevState)}
+      aria-label="Menu Animation Toggle Button"
     >
       {cloneElement(children, { toggle })}
     </button>
