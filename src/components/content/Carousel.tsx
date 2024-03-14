@@ -30,7 +30,7 @@ export default function Carousel({
         icon={id === "fr" ? <FaCode /> : <TbAugmentedReality />}
       />
       <motion.div
-        className="flex items-center justify-center gap-10"
+        className="flex items-center justify-center gap-10 cursor-grab"
         role="inner-carousel"
         drag={"x"}
         dragConstraints={{ right: width, left: -width }}
