@@ -9,7 +9,6 @@ export default function ContactForm({
 }) {
   return (
     <form className="flex flex-col items-center justify-center gap-3 sm:gap-5">
-      {children}
       <div className="flex items-center justify-center gap-3 sm:gap-10">
         <Label_Input name="name" />
         <Label_Input name="email" />
@@ -18,6 +17,7 @@ export default function ContactForm({
       <button className="self-start bg-gray-500 px-5 py-1.5 rounded-full font-semibold flex items-center justify-center gap-3 sm:gap-5 sm:text-lg">
         Send <FaTelegramPlane />
       </button>
+      {children}
     </form>
   );
 }

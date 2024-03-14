@@ -23,7 +23,7 @@ export default function Header() {
                 />
               </Link>
             </figure>
-            <aside className="absolute top-20">
+            <aside className="absolute top-14 sm:top-20">
               <Aside />
             </aside>
           </div>

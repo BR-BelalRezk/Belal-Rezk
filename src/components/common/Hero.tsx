@@ -10,10 +10,6 @@ const SplineCubes = dynamic(() => import("../content/SplineCubes"), {
 const ContactForm = dynamic(() => import("../content/ContactForm"), {
   ssr: false,
 });
-const ContactSocialLinks = dynamic(
-  () => import("../content/ContactSocialLinks"),
-  { ssr: false }
-);
 
 export default function Hero({
   textOne,
@@ -51,7 +47,7 @@ export default function Hero({
         )}
         {id === "contact" && (
           <ContactForm>
-            <ContactSocialLinks className="flex items-center justify-center gap-5">
+            <ul className="flex items-center justify-center gap-5">
               {contact.map((item) => (
                 <li
                   key={item.label}
@@ -66,7 +62,7 @@ export default function Hero({
                   </Link>
                 </li>
               ))}
-            </ContactSocialLinks>
+            </ul>
           </ContactForm>
         )}
         {id === "about" && <p>About</p>}
