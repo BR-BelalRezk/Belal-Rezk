@@ -18,7 +18,7 @@ export default function Aside() {
         </MenuAnimationToggleButton>
         <MenuAnimationList
           insetOpen="inset(0% 0% 0% 0% round 15px)"
-          insetClose="inset(0% 87% 90% 1% round 15px)"
+          insetClose="inset(0% 87% 88% 1% round 15px)"
           className="py-10 px-5 w-60 bg-gray-500 absolute top-0.5 -z-10 flex flex-col items-center justify-center gap-5"
         >
           {aside.map((item) => (

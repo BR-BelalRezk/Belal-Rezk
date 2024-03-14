@@ -22,6 +22,7 @@ export default function Certificates() {
             <Link
               href={certificate.link}
               className="flex items-center justify-center gap-10 group text-gray-300"
+              target="_blank"
             >
               <certificate.icon className="text-5xl" />
               <TbExternalLink className="text-3xl group-hover:translate-x-1 group-hover:-translate-y-1 duration-500" />

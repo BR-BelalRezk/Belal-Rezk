@@ -21,6 +21,7 @@ import {
   SiJavascript,
   SiNextdotjs,
   SiNextui,
+  SiReacthookform,
   SiReactos,
   SiReactquery,
   SiReactrouter,
@@ -120,7 +121,7 @@ export const fr = [
     label: "Nexa",
     desc: "A social media platform fostering connections and interactions among users.",
     github: "https://github.com/BR-BelalRezk/Nexa",
-    demo: "",
+    demo: "https://nexa-br.vercel.app",
   },
 ] as const;
 
@@ -183,6 +184,10 @@ export const skills = [
     icon: SiReactquery,
   },
   {
+    label: "React Hook Form",
+    icon: SiReacthookform,
+  },
+  {
     label: "Next.js",
     icon: SiNextdotjs,
   },
@@ -216,12 +221,12 @@ export const certificates = [
   {
     label: "Meta Front-End Developer Specialization",
     icon: FaMeta,
-    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/Q3SSBSMFSWWP",
+    link: "https://www.coursera.org/account/accomplishments/specialization/Q3SSBSMFSWWP",
   },
   {
     label: "IBM Front-End Developer Specialization",
     icon: SiIbm,
-    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/CLX46DNUGBLU",
+    link: "https://www.coursera.org/account/accomplishments/specialization/CLX46DNUGBLU",
   },
   {
     label: "The Ultimate React Course 2024: Jonas Schmedtmann",
