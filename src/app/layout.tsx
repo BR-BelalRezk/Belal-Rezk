@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Belal Rezk",
   description: "Belal Rezk's Personal Portfolio",
   icons: {
-    icon: "/bx-title.svg",
+    icon: "/nex-b.svg",
   },
 };
 
