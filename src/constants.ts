@@ -118,10 +118,10 @@ export const fr = [
     demo: "https://canvex-figma.vercel.app",
   },
   {
-    label: "Nexa",
-    desc: "A social media platform fostering connections and interactions among users.",
-    github: "https://github.com/BR-BelalRezk/Nexa",
-    demo: "https://nexa-br.vercel.app",
+    label: "Apple-iPhone",
+    desc: "An animated landing page to represent iphone 15 in an elegant modern way in 3D models",
+    github: "https://github.com/BR-BelalRezk/Apple-iPhone",
+    demo: "https://appleiphone.vercel.app/",
   },
 ] as const;
 
