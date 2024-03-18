@@ -16,8 +16,8 @@ export default function Header() {
                 <Image
                   src={"/nex-w.svg"}
                   alt="Nex-Logo"
-                  width={40}
-                  height={40}
+                  width={35}
+                  height={35}
                   priority
                   quality={100}
                 />

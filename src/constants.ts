@@ -1,7 +1,6 @@
 import { BiLogoNetlify } from "react-icons/bi";
 import { FaMeta } from "react-icons/fa6";
 import { PiCertificateFill } from "react-icons/pi";
-import { RiUserSettingsFill } from "react-icons/ri";
 import { TbAugmentedReality, TbBrandFramerMotion } from "react-icons/tb";
 import {
   FaUser,
@@ -21,6 +20,7 @@ import {
   SiJavascript,
   SiNextdotjs,
   SiNextui,
+  SiPlaycanvas,
   SiReacthookform,
   SiReactos,
   SiReactquery,
@@ -200,6 +200,10 @@ export const skills = [
     icon: TbBrandFramerMotion,
   },
   {
+    label: "PlayCanvas-AR",
+    icon: SiPlaycanvas,
+  },
+  {
     label: "Git",
     icon: FaGitAlt,
   },
@@ -215,7 +219,7 @@ export const skills = [
     label: "Vercel",
     icon: SiVercel,
   },
-];
+] as const;
 
 export const certificates = [
   {
@@ -233,4 +237,4 @@ export const certificates = [
     icon: SiUdemy,
     link: "https://ude.my/UC-cfa9b3b2-7683-49a0-b685-70cb2d43b1f0/",
   },
-];
+] as const;
