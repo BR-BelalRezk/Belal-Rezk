@@ -14,10 +14,7 @@ export default function Section({
     | "contact";
 }) {
   return (
-    <section
-      id={id}
-      className={id === "fr" || id === "skills" ? "bg-zinc-950" : "bg-black"}
-    >
+    <section id={id}>
       <article className="snap-center container mx-auto px-3 sm:px-5 md:px-10 lg:px-14 xl:px-16 2xl:px-20 h-dvh flex items-center justify-center">
         {children}
       </article>
