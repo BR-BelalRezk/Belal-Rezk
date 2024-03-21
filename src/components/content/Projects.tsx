@@ -20,15 +20,15 @@ export default function Projects({ id }: { id: "fr" | "ar" }) {
           <li
             key={project.label}
             role="carousel-item"
-            className="w-60 h-60 border-2 border-zinc-500 rounded-lg flex flex-col items-center justify-center gap-5"
+            className="w-60 h-60 border-2 border-gray-500 rounded-lg flex flex-col items-center justify-center gap-5"
           >
-            <h3 className="text-zinc-300 font-semibold text-2xl">
+            <h3 className="text-gray-300 font-semibold text-2xl">
               {project.label}
             </h3>
-            <h4 className="text-xs text-center px-5 text-zinc-200 font-medium">
+            <h4 className="text-xs text-center px-5 text-gray-200 font-medium">
               {project.desc}
             </h4>
-            <ul className="flex items-center justify-center gap-5 text-2xl text-zinc-100">
+            <ul className="flex items-center justify-center gap-5 text-2xl text-gray-100">
               {Array.from({ length: 2 }, (_, index) => index).map((index) => (
                 <li
                   key={index}

@@ -20,17 +20,17 @@ export default function Abouts({ id }: { id: "certificates" | "skills" }) {
               <li
                 key={certificate.label}
                 role="carousel-item"
-                className="w-40 h-40 border-2 border-zinc-500 rounded-lg flex flex-col items-center justify-center gap-5"
+                className="w-40 h-40 border-2 border-gray-500 rounded-lg flex flex-col items-center justify-center gap-5"
               >
                 <Link
                   href={certificate.link}
-                  className="flex items-center justify-center gap-10 group text-zinc-300"
+                  className="flex items-center justify-center gap-10 group text-gray-300"
                   target="_blank"
                 >
                   <certificate.icon className="text-5xl" />
                   <TbExternalLink className="text-3xl group-hover:translate-x-1 group-hover:-translate-y-1 duration-500" />
                 </Link>
-                <h3 className="text-center text-sm text-zinc-100">
+                <h3 className="text-center text-sm text-gray-100">
                   {certificate.label}
                 </h3>
               </li>
@@ -39,12 +39,12 @@ export default function Abouts({ id }: { id: "certificates" | "skills" }) {
               <li
                 key={skill.label}
                 role="carousel-item"
-                className="w-40 h-40 border-2 border-zinc-500 rounded-full flex flex-col items-center justify-center gap-5"
+                className="w-40 h-40 border-2 border-gray-500 rounded-full flex flex-col items-center justify-center gap-5"
               >
-                <h3 className="text-zinc-300 px-0.5 text-center font-semibold">
+                <h3 className="text-gray-300 px-0.5 text-center font-semibold">
                   {skill.label}
                 </h3>
-                <skill.icon className="text-5xl text-zinc-100" />
+                <skill.icon className="text-5xl text-gray-100" />
               </li>
             ))}
       </Carousel>

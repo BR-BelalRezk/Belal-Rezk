@@ -7,7 +7,7 @@ export default function Hamburger({ toggle }: { toggle?: boolean }) {
       {Array.from({ length: 2 }, (_, index) => index).map((index) => (
         <motion.span
           key={index}
-          className={`bg-zinc-50 rounded-full w-10 h-0.5`}
+          className={`bg-gray-50 rounded-full w-10 h-0.5`}
           initial={{ opacity: 0, x: -50 }}
           whileInView={{
             opacity: 1,

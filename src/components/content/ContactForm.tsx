@@ -14,7 +14,7 @@ export default function ContactForm({
         <Label_Input name="email" />
       </div>
       <Label_Input name="message" />
-      <button className="self-start bg-zinc-500 px-5 py-1.5 rounded-full font-semibold flex items-center justify-center gap-3 sm:gap-5 sm:text-lg">
+      <button className="self-start bg-gray-500 px-5 py-1.5 rounded-full font-semibold flex items-center justify-center gap-3 sm:gap-5 sm:text-lg">
         Send <FaTelegramPlane />
       </button>
       {children}

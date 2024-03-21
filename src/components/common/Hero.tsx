@@ -31,13 +31,13 @@ export default function Hero({
       >
         <H1
           id={id}
-          className={`flex items-center justify-center gap-3 text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 via-zinc-500 to-zinc-600 ${
+          className={`flex items-center justify-center gap-3 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 ${
             id === "work" ? "pb-5" : ""
           } ${
             id === "home" || id === "work" ? "text-4xl md:text-5xl" : "text-5xl"
           }`}
         >
-          {textOne} <span className="w-1 rounded-full h-10 bg-zinc-50" />
+          {textOne} <span className="w-1 rounded-full h-10 bg-gray-50" />
           {textTwo}
         </H1>
         {(id === "home" || id === "work") && (
@@ -54,7 +54,7 @@ export default function Hero({
                   className={`hover:scale-125 duration-500 ${
                     item.label === "github"
                       ? "text-4xl"
-                      : "text-2xl p-1.5 bg-zinc-50 text-black rounded-full"
+                      : "text-2xl p-1.5 bg-gray-50 text-black rounded-full"
                   }`}
                 >
                   <Link target="_blank" href={item.url}>
