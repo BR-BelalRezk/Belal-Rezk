@@ -11,7 +11,7 @@ export default function Label_Input({
     >
       <label
         htmlFor={name}
-        className="text-xl sm:text-3xl font-bold self-start text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600"
+        className="text-xl sm:text-3xl font-bold self-start text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 via-zinc-500 to-zinc-600"
       >
         {name
           .split("")
@@ -22,14 +22,14 @@ export default function Label_Input({
         <textarea
           name={name}
           id={name}
-          className="bg-transparent border-b-2 border-gray-500 w-full h-48 outline-none"
+          className="bg-transparent border-b-2 border-zinc-500 w-full h-48 outline-none"
         />
       ) : (
         <input
           id={name}
           name={name}
           type={name === "email" ? "email" : "text"}
-          className="bg-transparent border-b-2 border-gray-500 w-full outline-none"
+          className="bg-transparent border-b-2 border-zinc-500 w-full outline-none"
         />
       )}
     </div>

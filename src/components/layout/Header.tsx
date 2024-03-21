@@ -14,10 +14,10 @@ export default function Header() {
             <figure>
               <Link href={"/"}>
                 <Image
-                  src={"/nex-w.svg"}
+                  src={"/belal.svg"}
                   alt="Nex-Logo"
-                  width={35}
-                  height={35}
+                  width={50}
+                  height={50}
                   priority
                   quality={100}
                 />

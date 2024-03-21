@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Belal Rezk",
   description: "Belal Rezk's Personal Portfolio",
   icons: {
-    icon: "/nex-b.svg",
+    icon: "/belal-title.svg",
   },
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="snap-y snap-mandatory !scroll-smooth">
-      <body className={`${inter.className} bg-black text-gray-50`}>
+      <body className={`${inter.className} bg-black text-zinc-50`}>
         <Header />
         <main>{children}</main>
       </body>

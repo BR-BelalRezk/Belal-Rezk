@@ -19,16 +19,16 @@ export default function Aside() {
         <MenuAnimationList
           insetOpen="inset(0% 0% 0% 0% round 15px)"
           insetClose="inset(0% 87% 88% 1% round 15px)"
-          className="py-10 px-5 w-60 bg-gray-500 absolute top-0.5 -z-10 flex flex-col items-center justify-center gap-5"
+          className="py-10 px-5 w-60 bg-zinc-500 absolute top-0.5 -z-10 flex flex-col items-center justify-center gap-5"
         >
           {aside.map((item) => (
             <MenuAnimationListItem
               key={item.label}
-              className="w-full text-gray-400"
+              className="w-full text-zinc-400"
             >
               <Link
                 href={`${item.path}${item.hash}`}
-                className="flex items-center justify-between hover:scale-105 duration-500 hover:text-gray-50"
+                className="flex items-center justify-between hover:scale-105 duration-500 hover:text-zinc-50"
               >
                 <span className="uppercase font-semibold text-sm">
                   {item.label}

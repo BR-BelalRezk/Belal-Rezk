@@ -20,7 +20,7 @@ export default function StaggerText({
         whileInView="visible"
         viewport={{ once: true }}
         transition={{ staggerChildren: 0.1, delayChildren: 0.5, duration: 0.5 }}
-        className="text-gray-500 font-semibold"
+        className="text-zinc-500 font-semibold"
       >
         {text.split("").map((letter) => (
           <motion.span key={letter} variants={variants}>
