@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, memo } from "react";
+import { useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random";
@@ -11,7 +11,6 @@ export default function Stars() {
     </Canvas>
   );
 }
-// export default memo(Stars);
 function StarsCanvas(props: any) {
   const ref = useRef<any>();
   const [sphere] = useState(() =>

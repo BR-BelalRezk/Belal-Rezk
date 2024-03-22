@@ -1,10 +1,11 @@
 "use client";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
+import { memo } from "react";
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
   ssr: false,
 });
-export default function SplineCubes({ scene }: { scene: string }) {
+function SplineCubes({ scene }: { scene: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
@@ -16,3 +17,5 @@ export default function SplineCubes({ scene }: { scene: string }) {
     </motion.div>
   );
 }
+
+export default memo(SplineCubes);
