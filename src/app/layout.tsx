@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
-import Stars from "@/components/layout/Stars";
+import StarsBG from "@/components/layout/StarsBG";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="snap-y snap-mandatory !scroll-smooth">
       <body className={`${inter.className} bg-black text-gray-50`}>
-        <Stars />
+        <StarsBG />
         <Header />
         <main>{children}</main>
       </body>
