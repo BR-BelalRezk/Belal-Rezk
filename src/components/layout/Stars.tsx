@@ -4,14 +4,14 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random";
 
-function Stars() {
+export default function Stars() {
   return (
     <Canvas camera={{ position: [0, 0, 1] }}>
       <StarsCanvas />
     </Canvas>
   );
 }
-export default memo(Stars);
+// export default memo(Stars);
 function StarsCanvas(props: any) {
   const ref = useRef<any>();
   const [sphere] = useState(() =>
