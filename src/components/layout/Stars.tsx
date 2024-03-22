@@ -1,19 +1,17 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, memo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random";
 
-export default function Stars() {
+function Stars() {
   return (
-    <section className="fixed h-dvh w-dvw -z-50">
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <StarsCanvas />
-      </Canvas>
-    </section>
+    <Canvas camera={{ position: [0, 0, 1] }}>
+      <StarsCanvas />
+    </Canvas>
   );
 }
-
+export default memo(Stars);
 function StarsCanvas(props: any) {
   const ref = useRef<any>();
   const [sphere] = useState(() =>
