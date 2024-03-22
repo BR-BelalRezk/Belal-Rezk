@@ -106,12 +106,6 @@ export const fr = [
     demo: "https://lexaz.vercel.app",
   },
   {
-    label: "Zexai",
-    desc: "An AI SaaS app, specializing in advanced image generation and enhancement technologies.",
-    github: "https://github.com/BR-BelalRezk/Zexai",
-    demo: "https://zexai.vercel.app",
-  },
-  {
     label: "Canvex",
     desc: "A dynamic real-time collaboration platform as Figma, facilitating teamwork and creativity.",
     github: "https://github.com/BR-BelalRezk/Canvex",
@@ -121,7 +115,19 @@ export const fr = [
     label: "Apple-iPhone",
     desc: "An animated landing page to represent iphone 15 in an elegant modern way in 3D models",
     github: "https://github.com/BR-BelalRezk/Apple-iPhone",
-    demo: "https://appleiphone.vercel.app/",
+    demo: "https://appleiphone.vercel.app",
+  },
+  {
+    label: "Apple TV+",
+    desc: "An animated landing page when scroll for apple tv+ home page to practice framer motion",
+    github: "https://github.com/BR-BelalRezk/AppleTV",
+    demo: "https://appletv-br.vercel.app",
+  },
+  {
+    label: "Nike",
+    desc: "A landing page for nike with a good ui/ux , elegant modern design",
+    github: "https://github.com/BR-BelalRezk/Nike",
+    demo: "https://nike-br.vercel.app",
   },
 ] as const;
 
