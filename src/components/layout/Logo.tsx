@@ -1,11 +1,11 @@
 "use client";
 import { Variants, motion } from "framer-motion";
 const svgVarinats: Variants = {
-  visible: {
+  hidden: {
     opacity: 0,
     pathLength: 0,
   },
-  hidden: {
+  visible: {
     opacity: 1,
     pathLength: 1,
     transition: { duration: 3, ease: "easeInOut" },
@@ -19,6 +19,7 @@ export default function BLogo() {
       height="500"
       version="1"
       viewBox="0 0 375 375"
+      className="w-[50px] h-[50px]"
     >
       <defs>
         <clipPath id="79fcb53010">
