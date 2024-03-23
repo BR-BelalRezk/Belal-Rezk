@@ -129,6 +129,12 @@ export const fr = [
     github: "https://github.com/BR-BelalRezk/Nike",
     demo: "https://nike-br.vercel.app",
   },
+  {
+    label: "HiLink",
+    desc: "A landing page for a travel mobile app with a good elegant modern design",
+    github: "https://github.com/BR-BelalRezk/HiLink",
+    demo: "https://hilink-br.vercel.app/",
+  },
 ] as const;
 
 export const ar = [
