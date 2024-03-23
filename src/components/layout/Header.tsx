@@ -1,7 +1,8 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import Aside from "./Aside";
+import BLogo from "./Logo";
 
 const Navbar = dynamic(() => import("./Navbar"), { ssr: false });
 
@@ -13,14 +14,7 @@ export default function Header() {
           <div className="flex items-center justify-center flex-col gap-5">
             <figure>
               <Link href={"/"}>
-                <Image
-                  src={"/belal.svg"}
-                  alt="Nex-Logo"
-                  width={50}
-                  height={50}
-                  priority
-                  quality={100}
-                />
+                <BLogo />
               </Link>
             </figure>
             <aside className="absolute top-14 sm:top-20">
