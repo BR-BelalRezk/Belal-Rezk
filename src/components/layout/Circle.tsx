@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaX, FaRegCircle } from "react-icons/fa6";
+import { FaX, FaCircle } from "react-icons/fa6";
 
 export default function Circle({ toggle }: { toggle?: boolean }) {
   const span_0 = toggle ? { translateY: -50 } : { translateY: 0 };
@@ -14,7 +14,7 @@ export default function Circle({ toggle }: { toggle?: boolean }) {
           initial={false}
           animate={index === 0 ? span_0 : span_1}
         >
-          {index === 0 ? <FaRegCircle className="text-lg" /> : <FaX />}
+          {index === 0 ? <FaCircle className="text-lg" /> : <FaX />}
         </motion.span>
       ))}
     </>
