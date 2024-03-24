@@ -1,5 +1,5 @@
 "use client";
-// Compound Components
+// Compound Component
 import {
   cloneElement,
   createContext,
