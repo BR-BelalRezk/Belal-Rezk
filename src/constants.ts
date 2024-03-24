@@ -119,7 +119,7 @@ export const fr = [
   },
   {
     label: "BrainWave",
-    desc: "A modern landing page website with stylish UI design, sleek parallax effects and bento box layouts",
+    desc: "A modern landing page with stylish UI design, sleek parallax effects and bento box layouts",
     github: "https://github.com/BR-BelalRezk/BrainWave",
     demo: "https://brainwave-br.vercel.app",
   },
