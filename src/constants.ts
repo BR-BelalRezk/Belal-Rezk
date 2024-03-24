@@ -94,16 +94,16 @@ export const contact = [
 
 export const fr = [
   {
-    label: "Little Lemon",
-    desc: "A mediterranean restaurant, focused on traditional recipes served with a modern twist.",
-    github: "https://github.com/BR-BelalRezk/Little-Lemon",
-    demo: "https://meta-littlelemon.vercel.app",
-  },
-  {
     label: "Lexaz",
     desc: "Internal hotel management web app for desktop, a small boutique hotel with 8 cabins.",
     github: "https://github.com/BR-BelalRezk/Lexaz",
     demo: "https://lexaz.vercel.app",
+  },
+  {
+    label: "Little Lemon",
+    desc: "A mediterranean restaurant, focused on traditional recipes served with a modern twist.",
+    github: "https://github.com/BR-BelalRezk/Little-Lemon",
+    demo: "https://meta-littlelemon.vercel.app",
   },
   {
     label: "Canvex",
@@ -118,6 +118,12 @@ export const fr = [
     demo: "https://appleiphone.vercel.app",
   },
   {
+    label: "BrainWave",
+    desc: "A modern landing page website with stylish UI design, sleek parallax effects and bento box layouts",
+    github: "https://github.com/BR-BelalRezk/BrainWave",
+    demo: "https://brainwave-br.vercel.app",
+  },
+  {
     label: "Apple TV+",
     desc: "An animated landing page when scroll for apple tv+ home page to practice framer motion",
     github: "https://github.com/BR-BelalRezk/AppleTV",
@@ -125,7 +131,7 @@ export const fr = [
   },
   {
     label: "Nike",
-    desc: "A landing page for nike with a good ui/ux , elegant modern design",
+    desc: "A landing page for nike with a good ui/ux, elegant modern design",
     github: "https://github.com/BR-BelalRezk/Nike",
     demo: "https://nike-br.vercel.app",
   },
