@@ -49,7 +49,7 @@ export default function Hero({
             {textOne} <span className="w-1 rounded-full h-10 bg-gray-50" />
             {textTwo}
           </H1>
-          <p className="text-xs text-center sm:text-left">
+          <p className="text-xs md:leading-5 text-center sm:text-left">
             Hi there, {"I'm"} Belal Rezk, a Developer from Beni-Suef, Egypt,
             currently specializing in Agriculture at Beni-Suef University.{" "}
             {"I've"} cultivated my skills in Front-End and Augmented Reality
