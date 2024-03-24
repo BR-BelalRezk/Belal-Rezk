@@ -32,7 +32,7 @@ export default function Hero({
         <div
           className={
             id === "about"
-              ? "flex items-start justify-start flex-col gap-5"
+              ? "flex items-center justify-center sm:justify-start sm:items-start sm:w-1/2 flex-col gap-5"
               : ""
           }
         >
@@ -49,7 +49,7 @@ export default function Hero({
             {textOne} <span className="w-1 rounded-full h-10 bg-gray-50" />
             {textTwo}
           </H1>
-          <p>
+          <p className="text-xs text-center sm:text-left">
             Hi there, {"I'm"} Belal Rezk, a Developer from Beni-Suef, Egypt,
             currently specializing in Agriculture at Beni-Suef University.{" "}
             {"I've"} cultivated my skills in Front-End and Augmented Reality
