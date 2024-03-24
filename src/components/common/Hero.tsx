@@ -29,17 +29,37 @@ export default function Hero({
             : "flex-col-reverse sm:flex-row sm:gap-0"
         }`}
       >
-        <H1
-          id={id}
-          className={`flex items-center justify-center gap-3 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 ${
-            id === "work" ? "pb-5" : ""
-          } ${
-            id === "home" || id === "work" ? "text-4xl md:text-5xl" : "text-5xl"
-          }`}
+        <div
+          className={
+            id === "about"
+              ? "flex items-start justify-start flex-col gap-5"
+              : ""
+          }
         >
-          {textOne} <span className="w-1 rounded-full h-10 bg-gray-50" />
-          {textTwo}
-        </H1>
+          <H1
+            id={id}
+            className={`flex items-center justify-center gap-3 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 ${
+              id === "work" ? "pb-5" : ""
+            } ${
+              id === "home" || id === "work"
+                ? "text-4xl md:text-5xl"
+                : "text-5xl"
+            }`}
+          >
+            {textOne} <span className="w-1 rounded-full h-10 bg-gray-50" />
+            {textTwo}
+          </H1>
+          <p>
+            Hi there, {"I'm"} Belal Rezk, a Developer from Beni-Suef, Egypt,
+            currently specializing in Agriculture at Beni-Suef University.{" "}
+            {"I've"} cultivated my skills in Front-End and Augmented Reality
+            development through platforms like Coursera and Udemy, backed by
+            professional certificates from Meta and IBM, showcased on Credly.
+            Passionate about merging technology with agriculture, I aim to
+            innovate and create impactful solutions.
+          </p>
+        </div>
+
         {(id === "home" || id === "work") && (
           <SplineCubes
             scene={id === "home" ? "/scene1.splinecode" : "/scene2.splinecode"}
