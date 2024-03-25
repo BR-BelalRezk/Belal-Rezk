@@ -1,44 +1,19 @@
-"use client";
-import { useState, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial } from "@react-three/drei";
-import * as random from "maath/random";
-
 export default function Stars() {
   return (
-    <Canvas camera={{ position: [0, 0, 1] }}>
-      <StarsCanvas />
-    </Canvas>
-  );
-}
-function StarsCanvas(props: any) {
-  const ref = useRef<any>();
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(1000), { radius: 2.5 })
-  );
-  useFrame((state, delta) => {
-    if (ref.current) {
-      ref.current.rotation.x -= delta / 10;
-      ref.current.rotation.y -= delta / 15;
-    }
-  });
-  return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points
-        ref={ref}
-        positions={sphere}
-        stride={3}
-        frustumCulled={false}
-        {...props}
-      >
-        <PointMaterial
-          transparent
-          color="#f9fafb"
-          size={0.005}
-          sizeAttenuation={true}
-          depthWrite={false}
+    <section className="fixed h-dvh w-dvw">
+      {Array.from({ length: 3 }, (_, index) => index).map((index) => (
+        <div
+          key={index}
+          id={index === 0 ? "stars1" : index === 1 ? "stars2" : "stars3"}
+          className={`bg-transparent rounded-full ${
+            index === 0
+              ? "w-[1px] h-[1px]"
+              : index === 1
+              ? "w-0.5 h-0.5"
+              : "w-[3px] h-[3px]"
+          }`}
         />
-      </Points>
-    </group>
+      ))}
+    </section>
   );
 }
